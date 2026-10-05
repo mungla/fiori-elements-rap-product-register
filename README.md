@@ -28,3 +28,11 @@ response is stored and shown back on the record.
 4. The API response (status, result code, message, date and time) is saved on
    the record and shown in the list and on the Object Page, with status
    criticality colours.
+## Features
+- List Report with filtering and an Object Page for each product registration
+- Draft handling: create and edit a registration before saving it
+- **Post to EFRIS** action on the Object Page that sends the registration to the EFRIS API
+- API response stored on the record: status, result code, message, date and time
+- Status shown with criticality colours, so successful and failed postings are easy to tell apart
+- Error handling: if the API returns an error, the user sees the message, corrects
+  the data and clicks **Post to EFRIS** again

@@ -1,0 +1,28 @@
+{
+  "generationParameters": {
+    "generationDate": "Wed Sep 30 2026 15:04:43 GMT+0300 (East Africa Time)",
+    "generatorPlatform": "Visual Studio Code",
+    "serviceType": "OData URL",
+    "metadataFilename": "",
+    "serviceUrl": "https://your-system.example.com:44300/sap/opu/odata4/sap/zui_uraproductreg_o4_binding/srvd/sap/zui_uraproductreg_o4/0001/",
+    "appName": "urapproductreg",
+    "appTitle": "Product Registration",
+    "appDescription": "URA Product Registration",
+    "appNamespace": "",
+    "ui5Theme": "sap_horizon",
+    "ui5Version": "1.120.2",
+    "enableEslint": true,
+    "enableTypeScript": false,
+    "showMockDataInfo": true,
+    "generatorVersion": "1.33.0",
+    "template": "List Report Page V4",
+    "generatorName": "SAP Fiori Application Generator",
+    "entityRelatedConfig": [
+      {
+        "type": "Main Entity",
+        "value": "UraProductReg"
+      }
+    ],
+    "launchText": "To launch the generated application, run the following from the generated application root folder:\n\n```\n    npm start\n```"
+  }
+}

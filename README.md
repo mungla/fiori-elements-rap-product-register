@@ -1,42 +1,21 @@
-## Application Details
-|               |
-| ------------- |
-|**Generation Date and Time**<br>Wed Sep 30 2026 15:04:43 GMT+0300 (East Africa Time)|
-|**App Generator**<br>SAP Fiori Application Generator|
-|**App Generator Version**<br>1.33.0|
-|**Generation Platform**<br>Visual Studio Code|
-|**Template Used**<br>List Report Page V4|
-|**Service Type**<br>OData URL|
-|**Service URL**<br>https://your-system.example.com:44300/sap/opu/odata4/sap/zui_uraproductreg_o4_binding/srvd/sap/zui_uraproductreg_o4/0001/|
-|**Module Name**<br>urapproductreg|
-|**Application Title**<br>Product Registration|
-|**Namespace**<br>|
-|**UI5 Theme**<br>sap_horizon|
-|**UI5 Version**<br>1.120.2|
-|**Enable TypeScript**<br>False|
-|**Add Eslint configuration**<br>True, see https://www.npmjs.com/package/@sap-ux/eslint-plugin-fiori-tools#rules for the eslint rules.|
-|**Main Entity**<br>UraProductReg|
+# Product Registration: Fiori Elements on ABAP RAP
 
-## urapproductreg
+A SAPUI5 Fiori elements List Report and Object Page for registering products
+with the Uganda Revenue Authority (URA) EFRIS system. Users maintain product
+data in the app, the product is transmitted to the EFRIS API, and the
+response is stored and shown back on the record.
 
-URA Product Registration
+## How it works
+1. The user creates or edits a product registration in the Fiori app (draft-enabled).
+2. The RAP business object sends the registration data to the EFRIS API.
+3. The API response (status, result code, message, date and time) is saved
+   on the record and displayed in the list and on the Object Page, with
+   status criticality colours.
 
-### Starting the generated app
-
--   This app has been generated using the SAP Fiori tools - App Generator, as part of the SAP Fiori tools suite.  To launch the generated application, run the following from the generated application root folder:
-
-```
-    npm start
-```
-
-- It is also possible to run the application using mock data that reflects the OData Service URL supplied during application generation.  In order to run the application with Mock Data, run the following from the generated app root folder:
-
-```
-    npm run start-mock
-```
-
-#### Pre-requisites:
-
-1. Active NodeJS LTS (Long Term Support) version and associated supported NPM version.  (See https://nodejs.org)
-
-
+## Tech stack
+- ABAP RAP: CDS view entities, draft-enabled business object, OData V4 - UI service binding
+- Integration: outbound call to the EFRIS API, with the response written back to the business object
+- SAPUI5 1.120 with Fiori elements (V4)
+- SAP Fiori tools in VS Code, Node.js 24 LTS
+- Deployment to an ABAP system as a BSP application with `fiori deploy`
+- Fiori Launchpad integration (semantic object, target mapping, tile)

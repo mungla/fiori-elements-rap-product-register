@@ -31,19 +31,19 @@ response is stored and shown back on the record.
 ## Screenshots
 
 **List report with status criticality and filters (mock data):**
-![List report](docs/screenshots/01-list-report.png)
+![List report](screenshots/01-list-report.png)
 
 **Fetch Candidates action parameters:**
-![Fetch Candidates dialog](docs/screenshots/02-fetch-candidates-dialog.png)
+![Fetch Candidates dialog](screenshots/02-fetch-candidates-dialog.png)
 
 **A fetched candidate loaded into draft (from the live system; client data redacted):**
-![Candidate loaded into draft](docs/screenshots/03-candidate-loaded-into-draft.png)
+![Candidate loaded into draft](screenshots/03-candidate-loaded-into-draft.png)
 
 **Object Page with the registration details and API response fields:**
-![Object Page](docs/screenshots/04-object-page.png)
+![Object Page](screenshots/04-object-page.png)
 
 **Selecting a row enables the Post to EFRIS action:**
-![Row selected, Post to EFRIS enabled](docs/screenshots/05-row-selected-post-action.png)
+![Row selected, Post to EFRIS enabled](screenshots/05-row-selected-post-action.png)
 
 ## Tech stack
 - ABAP RAP: CDS view entities, draft-enabled business object with managed behavior, OData V4 - UI service binding
